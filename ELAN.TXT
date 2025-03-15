@@ -1,0 +1,32 @@
+--color-titan-white-50: #f4f2ff;
+--color-titan-white-100: #eeecff;
+--color-titan-white-200: #d8d4ff;
+--color-titan-white-300: #bbb2ff;
+--color-titan-white-400: #9a86ff;
+--color-titan-white-500: #7a55fd;
+--color-titan-white-600: #6931f6;
+--color-titan-white-700: #5b20e1;
+--color-titan-white-800: #4b1abd;
+--color-titan-white-900: #40179b;
+--color-titan-white-950: #250c69;
+
+
+
+/* :root {
+    --color-titan-white-background:#f8f8ff;
+    --color-titan-black-main:#0b0b38f2;
+    --color-titan-white-50: #f4f2ff;
+    --color-titan-white-100: #eeecff;
+    --color-titan-white-200: #d8d4ff;
+    --color-titan-white-300: #bbb2ff;
+    --color-titan-white-400: #9a86ff;
+    --color-titan-white-500: #7a55fd;
+    --color-titan-white-600: #6931f6;
+    --color-titan-white-700: #5b20e1;
+    --color-titan-white-800: #4b1abd;
+    --color-titan-white-900: #40179b;
+    --color-titan-white-950: #250c69;
+    --color-titan-border:rgba(51, 0, 128, 0.479);;
+    --color-titan-white-1000: #0b0b38;
+
+} */
