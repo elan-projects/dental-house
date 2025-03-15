@@ -127,6 +127,8 @@
     .emergency_card {
         flex-direction: column;
     }
+
+    
 }
 
 @media screen and (max-width: 940px) {
@@ -294,6 +296,12 @@
     .nav__links_contact.active {
         display: flex; /* Show the menu when the active class is added */
     }
+    .about_main_header , .service_main_header  , .transformation_main_header , .about_main_header_sec , .doctors_main_header , .contact_main_header{
+        font-size:1.8rem;
+    }
+    .hero_main_text {
+        font-size:1.9rem;
+    }
 }
 
 
@@ -306,5 +314,8 @@
     }
     .about_us_img {
         max-height: 340px;
+    }
+    .hero_main_text {
+        font-size:1.4rem;
     }
 }

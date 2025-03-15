@@ -100,7 +100,9 @@ document.addEventListener('DOMContentLoaded', function() {
             "message_label": "Message",
             "message_placeholder": "Write your message here...",
             "send_button": "Send",
-            "write_to_us": "Email Us"
+            "write_to_us": "Email Us",
+            "contact_us_social_media" : "Social Media"
+
         }
     };
     
@@ -157,7 +159,9 @@ document.addEventListener('DOMContentLoaded', function() {
             'contact_header_main',
             'contact_main',
             'about_content_wrapper',
-            'service_card'
+            'service_card',
+            'service_card_header'
+            
             
 
 

@@ -84,72 +84,73 @@ const services = [
         description_en: "We provide expert orthodontic care for a perfect smile.",
         name_ar: "تقويم الأسنان", 
         description_ar: "نقدم رعاية تقويم أسنان متخصصة لابتسامة مثالية.",
-        image: "https://pvpd.com/wp-content/uploads/2023/02/Different-types-of-braces-are-used-in-orthodontics.jpg"
+        image: "/public/imgs/Orthodontics.jpg"
     },
     { 
         name_en: "Oral and Maxillofacial Surgery", 
         description_en: "Advanced surgical care for oral and facial conditions.",
         name_ar: "جراحة الفم والوجه والفكين", 
         description_ar: "رعاية جراحية متقدمة لحالات الفم والوجه.",
-        image: "/public/imgs/33.webp"
+        image: "/public/imgs/Oral_and_Maxillofacial_Surgery.jpg"
     },
     { 
         name_en: "Pediatric and Special Needs Dentistry", 
         description_en: "Gentle and specialized dental care for children and individuals with special needs.",
         name_ar: "طب أسنان الأطفال وذوي الاحتياجات الخاصة", 
         description_ar: "رعاية أسنان متخصصة للأطفال وذوي الاحتياجات الخاصة.",
-        image: "/public/imgs/44.webp"
+        image: "/public/imgs/Pediatric_and_Special_Needs_Dentistry.jpg"
     },
     { 
         name_en: "Dental Implants", 
         description_en: "Permanent solutions for missing teeth with high-quality implants.",
         name_ar: "زراعة الأسنان", 
         description_ar: "حلول دائمة للأسنان المفقودة بزراعة عالية الجودة.",
-        image: "https://example.com/dental-implants.jpg"
+        image: "/public/imgs/Dental_Implants.jpg"
     },
     { 
         name_en: "Prosthodontics", 
         description_en: "Custom dental prosthetics to restore function and aesthetics.",
         name_ar: "تعويضات الأسنان", 
         description_ar: "أطقم أسنان مخصصة لاستعادة الوظيفة والمظهر.",
-        image: "https://example.com/prosthodontics.jpg"
+        image: "/public/imgs/Prosthodontics.jpg"
     },
     { 
         name_en: "Endodontics", 
         description_en: "Expert root canal treatments to save natural teeth.",
         name_ar: "علاج جذور الأسنان", 
         description_ar: "علاجات قناة الجذر المتخصصة للحفاظ على الأسنان الطبيعية.",
-        image: "https://example.com/endodontics.jpg"
+        image: "/public/imgs/Endodontics.jpg"
     },
     { 
         name_en: "Restorative Dentistry", 
         description_en: "Comprehensive solutions to restore and strengthen teeth.",
         name_ar: "طب الأسنان الترميمي", 
         description_ar: "حلول شاملة لاستعادة وتقوية الأسنان.",
-        image: "https://example.com/restorative-dentistry.jpg"
+        image: "/public/imgs/Restorative_Dentistry.jpg"
     },
     { 
         name_en: "Teeth Whitening", 
         description_en: "Professional whitening treatments for a brighter smile.",
         name_ar: "تبييض الأسنان", 
         description_ar: "علاجات تبييض احترافية لابتسامة أكثر إشراقًا.",
-        image: "https://example.com/teeth-whitening.jpg"
+        image: "/public/imgs/Teeth_Whitening.jpg"
     },
     { 
         name_en: "Periodontics", 
         description_en: "Specialized care for gum health and disease prevention.",
         name_ar: "أمراض اللثة", 
         description_ar: "رعاية متخصصة لصحة اللثة والوقاية من الأمراض.",
-        image: "https://example.com/periodontics.jpg"
+        image: "/public/imgs/Periodontics.jpg"
     },
     { 
         name_en: "Oral Health and Hygiene", 
         description_en: "Preventive care and education for a healthy mouth.",
         name_ar: "صحة الفم والنظافة", 
         description_ar: "رعاية وقائية وتثقيف لفم صحي.",
-        image: "https://example.com/oral-health.jpg"
+        image: "/public/imgs/Oral_Health_and_Hygiene.jpg"
     }
 ];
+
 
 function renderServices() {
     const container = document.querySelector(".service_container");
@@ -202,3 +203,102 @@ setInterval(() => {
         renderServices();
     }
 }, 500);
+
+
+document.querySelectorAll(".nav__links li").forEach(item => {
+    item.addEventListener("click", () => {
+        const sectionId = item.getAttribute("sec");
+        const targetSection = document.getElementById(sectionId);
+        
+        if (targetSection) {
+            window.scrollTo({
+                top: targetSection.offsetTop + 50, // Adjust offset if needed
+                behavior: "smooth"
+            });
+        }
+    });
+});
+
+
+function smoothScrollTo(targetId) {
+    let targetSection = document.getElementById(targetId); 
+    if (targetSection) {
+        window.scrollTo({
+            top: targetSection.offsetTop + 400, // Adjust spacing
+            behavior: "smooth"
+        });
+    } else {
+        console.error(`Element with ID '${targetId}' not found.`);
+    }
+}
+
+document.querySelectorAll(".nav__links_sec li").forEach(item => {
+    item.addEventListener("click", () => {
+        const sectionId = item.getAttribute("sec");
+        const targetSection = document.getElementById(sectionId);
+        
+        if (targetSection) {
+            window.scrollTo({
+                top: targetSection.offsetTop + 50, 
+                behavior: "smooth"
+            });
+        }
+    });
+});
+
+function appearNavBar() {
+    const navBar = document.querySelector(".sec_nav");
+
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 100) {
+            navBar.classList.add("visible", "bounce");
+        } else {
+            navBar.classList.remove("visible", "bounce");
+        }
+    });
+}
+
+appearNavBar();
+
+
+
+function appearElementV1(className, direction, position, offset) {
+    let container = document.querySelectorAll(className);
+    
+    container.forEach(item => {
+        item.style.transform = `translate${direction}(${position}px)`;
+        item.style.opacity = `0`;
+        item.style.filter = "blur(10px)";
+    });
+
+    window.addEventListener("scroll", () => {
+        container.forEach(item => {
+            let itemTop = item.getBoundingClientRect().top;
+            let triggerPosition = window.innerHeight - offset;
+
+            if (itemTop < triggerPosition) {
+                item.classList.add("appear");
+            } else {
+                item.classList.remove("appear");
+            }
+        });
+    });
+}
+
+// Call the function
+appearElementV1(".doctors_main_header", "Y", 20, 100);
+appearElementV1(".contact_main_header", "X", 20, 100);
+appearElementV1(".about_main_header_sec", "X", 20, 100);
+appearElementV1(".transformation_main_header", "X", 20, 100);
+appearElementV1(".about_main_header", "X", 20, 100);
+appearElementV1(".footer-section", "Y", 20, 100);
+appearElementV1(".wokring_hour_card", "X", 20, 100);
+appearElementV1(".emergency_card", "X", -20, 100);
+appearElementV1(".about_us_img", "Y", -20, 100);
+appearElementV1(".about_us_img_sec", "X", 20, 100);
+appearElementV1(".emergency_card", "X", -20, 100);
+appearElementV1(".contact_extra_text", "X", -20, 100);
+appearElementV1(".service_card", "Y", -20, 100);
+appearElementV1(".service_main_header", "X", 20, 100);
+appearElementV1(".contact_extra_text", "X", -20, 100);
+appearElementV1(".contact_extra_text", "X", -20, 100);

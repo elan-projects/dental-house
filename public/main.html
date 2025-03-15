@@ -9,26 +9,30 @@
     <title>Dental House</title>
 </head>
 <body>
-    <header>
+
+    <header id="hero">
+        <div class="whatsapp_contact_container" onClick="window.open('https://api.whatsapp.com/send/?phone=966138119996','_blank')">
+            <svg viewBox="0 0 24 24" version="1.1" id="svg8" inkscape:version="0.92.4 (5da689c313, 2019-01-14)" sodipodi:docname="1881161.svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"><path id="path4" inkscape:connector-curvature="0" d="M16.6,14c-0.2-0.1-1.5-0.7-1.7-0.8c-0.2-0.1-0.4-0.1-0.6,0.1c-0.2,0.2-0.6,0.8-0.8,1c-0.1,0.2-0.3,0.2-0.5,0.1c-0.7-0.3-1.4-0.7-2-1.2c-0.5-0.5-1-1.1-1.4-1.7c-0.1-0.2,0-0.4,0.1-0.5c0.1-0.1,0.2-0.3,0.4-0.4c0.1-0.1,0.2-0.3,0.2-0.4c0.1-0.1,0.1-0.3,0-0.4c-0.1-0.1-0.6-1.3-0.8-1.8C9.4,7.3,9.2,7.3,9,7.3c-0.1,0-0.3,0-0.5,0C8.3,7.3,8,7.5,7.9,7.6C7.3,8.2,7,8.9,7,9.7c0.1,0.9,0.4,1.8,1,2.6c1.1,1.6,2.5,2.9,4.2,3.7c0.5,0.2,0.9,0.4,1.4,0.5c0.5,0.2,1,0.2,1.6,0.1c0.7-0.1,1.3-0.6,1.7-1.2c0.2-0.4,0.2-0.8,0.1-1.2C17,14.2,16.8,14.1,16.6,14 M19.1,4.9C15.2,1,8.9,1,5,4.9c-3.2,3.2-3.8,8.1-1.6,12L2,22l5.3-1.4c1.5,0.8,3.1,1.2,4.7,1.2h0c5.5,0,9.9-4.4,9.9-9.9C22,9.3,20.9,6.8,19.1,4.9 M16.4,18.9c-1.3,0.8-2.8,1.3-4.4,1.3h0c-1.5,0-2.9-0.4-4.2-1.1l-0.3-0.2l-3.1,0.8l0.8-3l-0.2-0.3C2.6,12.4,3.8,7.4,7.7,4.9S16.6,3.7,19,7.5C21.4,11.4,20.3,16.5,16.4,18.9"></path></svg>
+        </div>
+
         <nav class="main_nav">
             <div class="logo">
                 <img src="https://static.wixstatic.com/media/26f862_fd2eab797eaa479b9a8e81e6da6300ca~mv2_d_14173_5906_s_3_2.png/v1/crop/x_424,y_363,w_13567,h_5240/fill/w_448,h_173,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/logo-01.png" alt="healthcare">
             </div>
             <div class="language-switcher">
                 <select id="language-select">
-                    <option selected disabled>🌍</option>
                     <option data-lang="en" value="en">🇬🇧</option>
-                    <option data-lang="ar" value="ar">🇸🇦</option>
+                    <option data-lang="ar" value="ar" selected>🇸🇦</option>
                 </select>
             </div>
 
             <div class="nav__links_contact" id="navLinks">
                 
                 <ul class="nav__links">
-                    <li data-key="home">Home</li>
-                    <li data-key="about">About Us</li>
-                    <li data-key="service">Services</li>
-                    <li data-key="contact_us">Contact Us</li>
+                    <li sec="hero" data-key="home">Home</li>
+                    <li sec="about_section" data-key="about">About Us</li>
+                    <li sec="service_section" data-key="service">Services</li>
+                    <li sec="contact" data-key="contact_us">Contact Us</li>
                 </ul>
                 <div class="contact_button_container">
                     <div class="whatsapp_container">
@@ -41,9 +45,19 @@
                 <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960"  ><path d="M240-160q-33 0-56.5-23.5T160-240q0-33 23.5-56.5T240-320q33 0 56.5 23.5T320-240q0 33-23.5 56.5T240-160Zm240 0q-33 0-56.5-23.5T400-240q0-33 23.5-56.5T480-320q33 0 56.5 23.5T560-240q0 33-23.5 56.5T480-160Zm240 0q-33 0-56.5-23.5T640-240q0-33 23.5-56.5T720-320q33 0 56.5 23.5T800-240q0 33-23.5 56.5T720-160ZM240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400ZM240-640q-33 0-56.5-23.5T160-720q0-33 23.5-56.5T240-800q33 0 56.5 23.5T320-720q0 33-23.5 56.5T240-640Zm240 0q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Zm240 0q-33 0-56.5-23.5T640-720q0-33 23.5-56.5T720-800q33 0 56.5 23.5T800-720q0 33-23.5 56.5T720-640Z"/></svg>
             </div>
         </nav>
+        <div class="sec_nav">
+            <ul class="nav__links_sec">
+                <li sec="hero_section" data-key="home">Home</li>
+                <li sec="about_section" data-key="about">About Us</li>
+                <li sec="service_section" data-key="service">Services</li>
+                <li sec="contact" data-key="contact_us">Contact Us</li>
+            </ul>
+        </div>
+     
     </header>
+    
 
-    <section class="hero_section bckgrnd">
+    <section class="hero_section bckgrnd" id="hero_section">
         <div class="hero_left_section">
             <div class="hero_text_container">
                 <p class="hero_main_text">
@@ -77,13 +91,17 @@
                 </div>
             </div>
             
-            <div class="hero_buttons">
-                <div class="button_book">
-                    <svg  height="80%" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M14.5562 15.5477L14.1007 16.0272C14.1007 16.0272 13.0181 17.167 10.0631 14.0559C7.10812 10.9448 8.1907 9.80507 8.1907 9.80507L8.47752 9.50311C9.18407 8.75924 9.25068 7.56497 8.63424 6.6931L7.37326 4.90961C6.61028 3.8305 5.13596 3.68795 4.26145 4.60864L2.69185 6.26114C2.25823 6.71766 1.96765 7.30945 2.00289 7.96594C2.09304 9.64546 2.81071 13.259 6.81536 17.4752C11.0621 21.9462 15.0468 22.1239 16.6763 21.9631C17.1917 21.9122 17.6399 21.6343 18.0011 21.254L19.4217 19.7584C20.3806 18.7489 20.1102 17.0182 18.8833 16.312L16.9728 15.2123C16.1672 14.7486 15.1858 14.8848 14.5562 15.5477Z" /><path fill-rule="evenodd" clip-rule="evenodd" d="M22 7C22 9.76142 19.7614 12 17 12C16.2002 12 15.4442 11.8122 14.7738 11.4783C14.5956 11.3895 14.392 11.36 14.1997 11.4114L13.0867 11.7092C12.6035 11.8385 12.1615 11.3965 12.2908 10.9133L12.5886 9.80031C12.64 9.60803 12.6105 9.4044 12.5217 9.22624C12.1878 8.55582 12 7.79984 12 7C12 4.23858 14.2386 2 17 2C19.7614 2 22 4.23858 22 7ZM17 4.8125C17.5178 4.8125 17.9375 5.23223 17.9375 5.75V6.0625H18.25C18.7678 6.0625 19.1875 6.48223 19.1875 7C19.1875 7.51777 18.7678 7.9375 18.25 7.9375H17.9375V8.25C17.9375 8.76777 17.5178 9.1875 17 9.1875C16.4822 9.1875 16.0625 8.76777 16.0625 8.25V7.9375H15.75C15.2322 7.9375 14.8125 7.51777 14.8125 7C14.8125 6.48223 15.2322 6.0625 15.75 6.0625H16.0625V5.75C16.0625 5.23223 16.4822 4.8125 17 4.8125Z"/></svg>
+            <div class="hero_buttons" >
+                <div class="button_book" onclick="smoothScrollTo('contact')">
+                    <svg height="80%" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.5562 15.5477L14.1007 16.0272C14.1007 16.0272 13.0181 17.167 10.0631 14.0559C7.10812 10.9448 8.1907 9.80507 8.1907 9.80507L8.47752 9.50311C9.18407 8.75924 9.25068 7.56497 8.63424 6.6931L7.37326 4.90961C6.61028 3.8305 5.13596 3.68795 4.26145 4.60864L2.69185 6.26114C2.25823 6.71766 1.96765 7.30945 2.00289 7.96594C2.09304 9.64546 2.81071 13.259 6.81536 17.4752C11.0621 21.9462 15.0468 22.1239 16.6763 21.9631C17.1917 21.9122 17.6399 21.6343 18.0011 21.254L19.4217 19.7584C20.3806 18.7489 20.1102 17.0182 18.8833 16.312L16.9728 15.2123C16.1672 14.7486 15.1858 14.8848 14.5562 15.5477Z"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M22 7C22 9.76142 19.7614 12 17 12C16.2002 12 15.4442 11.8122 14.7738 11.4783C14.5956 11.3895 14.392 11.36 14.1997 11.4114L13.0867 11.7092C12.6035 11.8385 12.1615 11.3965 12.2908 10.9133L12.5886 9.80031C12.64 9.60803 12.6105 9.4044 12.5217 9.22624C12.1878 8.55582 12 7.79984 12 7C12 4.23858 14.2386 2 17 2C19.7614 2 22 4.23858 22 7ZM17 4.8125C17.5178 4.8125 17.9375 5.23223 17.9375 5.75V6.0625H18.25C18.7678 6.0625 19.1875 6.48223 19.1875 7C19.1875 7.51777 18.7678 7.9375 18.25 7.9375H17.9375V8.25C17.9375 8.76777 17.5178 9.1875 17 9.1875C16.4822 9.1875 16.0625 8.76777 16.0625 8.25V7.9375H15.75C15.2322 7.9375 14.8125 7.51777 14.8125 7C14.8125 6.48223 15.2322 6.0625 15.75 6.0625H16.0625V5.75C16.0625 5.23223 16.4822 4.8125 17 4.8125Z"/>
+                    </svg>
                     <span data-key="book_now"></span>
                 </div>
+                
 
-                <div class="button_enquiries">
+                <div class="button_enquiries" onClick="window.open('https://api.whatsapp.com/send/?phone=966138119996','_blank')">
                     <svg xmlns="http://www.w3.org/2000/svg" height="80%" viewBox="0 -960 960 960"  ><path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/></svg>           
                     <span data-key="enquires"></span>
                 </div>
@@ -112,7 +130,7 @@
             </div>
         </div>
         <div class="dental_info">
-            <div class="button_appoitment">
+            <div class="button_appoitment"  onclick="smoothScrollTo('contact')">
                 <svg xmlns="http://www.w3.org/2000/svg" height="80%" viewBox="0 -960 960 960"  fill="#e3e3e3"><path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/></svg>                    
                 <span data-key="book_appointment">Book An Appointment</span>
             </div>
@@ -120,9 +138,9 @@
     </div>
 
 
-    <section class="about_section">
+    <section class="about_section" id = "about_section">
         <div class="about_main_img_container">
-            <img src="https://static.wixstatic.com/media/69898c_75de1e6c437e4fae8d1f2dc824846952~mv2.jpg/v1/fill/w_1195,h_785,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/69898c_75de1e6c437e4fae8d1f2dc824846952~mv2.jpg" alt="">
+            <img src="/public/imgs/about_s.jpg" alt="">
         </div>
         <div class="about_content_wrapper">
             <div class="about_content">
@@ -142,7 +160,7 @@
     </section>
 
 
-    <section class="service_section">
+    <section class="service_section" id="service_section">
         <div class="service_header">
             <strong data-key="our_services">OUR SERVICES</strong>
         </div>
@@ -175,7 +193,7 @@
                     Stunning results that showcase the lifechanging impact
                 </p>
             </div>
-            <div class="more_services_button">
+            <div class="more_services_button"  onclick="smoothScrollTo('contact')">
                 <span data-key="contact_us">Contact Us</span>
                 <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960"><path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/></svg>           
             </div>
@@ -214,15 +232,15 @@
         <div class="about_us_left">
             <div class="about_us_img_row">
                 <div class="about_us_img">
-                    <img src="https://static.wixstatic.com/media/26f862_279e83c57c124920ba347b77ec6f94d5~mv2_d_2528_2002_s_2.jpg/v1/fill/w_1174,h_885,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/26f862_279e83c57c124920ba347b77ec6f94d5~mv2_d_2528_2002_s_2.jpg" alt="">
+                    <img src="https://static.wixstatic.com/media/69898c_d0b0e04d02cc4aff8d35647855e16970~mv2.jpg/v1/fill/w_1562,h_1754,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/69898c_d0b0e04d02cc4aff8d35647855e16970~mv2.jpg" alt="">
                 </div>
                 <div class="about_us_img">
-                    <img src="https://static.wixstatic.com/media/26f862_058b27c0d0cb4191b0912a2e621e5099~mv2_d_2490_2002_s_2.jpg/v1/fill/w_670,h_828,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/26f862_058b27c0d0cb4191b0912a2e621e5099~mv2_d_2490_2002_s_2.jpg" alt="">
+                    <img src="https://static.wixstatic.com/media/69898c_2fa446e57d5845968930e640f05a8482~mv2.jpg/v1/fill/w_1429,h_1754,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/69898c_2fa446e57d5845968930e640f05a8482~mv2.jpg" alt="">
                 </div>
             </div>
             <div class="about_us_img_row">
                 <div class="about_us_img_sec">
-                    <img src="https://static.wixstatic.com/media/69898c_fe3313a717f14569bb210040ce7b93e3~mv2.jpg/v1/fill/w_883,h_589,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/69898c_fe3313a717f14569bb210040ce7b93e3~mv2.jpg" alt="">
+                    <img src="https://static.wixstatic.com/media/69898c_3a8d8bfdd9eb4b089e66d5bf1b1c61e9~mv2.jpg/v1/fill/w_1195,h_1397,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/69898c_3a8d8bfdd9eb4b089e66d5bf1b1c61e9~mv2.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -237,33 +255,37 @@
 
 
             <div class="about_qa">
-                <div class="qa-item">
-                    <div class="qa-header">
-                        <span class="icon">+</span> Our Vision
-                    </div>
-                    <div class="qa-content">
-                        Implementing excellence and leadership in dentistry in the Middle East.                    </div>
+            <div class="qa-item">
+                <div class="qa-header">
+                    <span class="icon">+</span> رؤيتنا
                 </div>
+                <div class="qa-content">
+                    تنفيذ التميز والقيادة في مجال طب الأسنان في الشرق الأوسط.
+                </div>
+            </div>
             
-                <div class="qa-item">
-                    <div class="qa-header">
-                        <span class="icon">+</span> Mission
-                    </div>
-                    <div class="qa-content">
-                        Providing the ultimate standards of excellence in dental and esthetic care using the latest technology from the most competent providers in the region.                    </div>
+            <div class="qa-item">
+                <div class="qa-header">
+                    <span class="icon">+</span> المهمة
                 </div>
-
+                <div class="qa-content">
+                    تقديم معايير التميز المطلقة في العناية بالأسنان والتجميل باستخدام أحدث التقنيات من أنجع مقدمي الخدمات في المنطقة.
+                </div>
+                </div>
+                
                 <div class="qa-item">
-                    <div class="qa-header">
-                        <span class="icon">+</span> Objectives
-                    </div>
-                    <ul class="qa-content">
-                        <li>Meeting all the dental and esthetic needs of our guests by providing evidence-based dental practice using modern equipment in an infinite luxury setting.</li>
-                        <li>Providing the highest standard of treatment by adopting the best dental practices using the latest technology.</li>
-                        <li>Maintaining high integrity at work and ensuring guests’ satisfaction.</li>
-                        <li>Implementing community projects with an ultimate goal of raising oral and dental public health awareness nationally and regionally.</li>
-                        <li>Creating a high-quality welcoming work environment aiming at advancing the careers of our team to maintain professional excellence.</li>
+                <div class="qa-header">
+                    <span class="icon">+</span> الأهداف
+                </div>
+                <div class="qa-content">
+                    <ul>
+                    <li>تلبية كافة الاحتياجات السنية والتجميلية لضيوفنا من خلال توفير ممارسات طب أسنان مبنية على الأدلة باستخدام المعدات الحديثة في بيئة فاخرة لا متناهية.</li>
+                    <li>تقديم أعلى معايير العلاج من خلال اعتماد أفضل ممارسات طب الأسنان واستخدام أحدث التقنيات.</li>
+                    <li>الحفاظ على نزاهة عالية في العمل وضمان رضا الضيوف.</li>
+                    <li>تنفيذ مشاريع مجتمعية بهدف رفع مستوى الوعي بالصحة الفموية والسنية على الصعيدين الوطني والإقليمي.</li>
+                    <li>خلق بيئة عمل ترحيبية ذات جودة عالية تهدف إلى تطوير مسارات فريقنا المهنية للحفاظ على التميز المهني.</li>
                     </ul>
+                </div>
             </div>
             
             
@@ -286,74 +308,114 @@
         
         <div class="doctors_wrapper">
 
-            <div class="doctor_card">
-                <div class="doctor_img">
-                    <img src="https://static.wixstatic.com/media/69898c_e9b46561456e48018ed82dfa89cac6ea~mv2_d_10027_6694_s_4_2.jpg/v1/fill/w_619,h_914,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/69898c_e9b46561456e48018ed82dfa89cac6ea~mv2_d_10027_6694_s_4_2.jpg" alt="">
-                </div>
-                <div class="doctor_name">
-                    <strong>Dr. Firas Alqarawi </strong>
-                    <p>Prosthodntics, Esthetic & Implant Dentistry</p>
-                </div>
-            </div>
 
-            <div class="doctor_card">
-                <div class="doctor_img">
-                    <img src="https://static.wixstatic.com/media/26f862_0faed7615bcb4e058cbe1555833b3b25~mv2_d_6016_4016_s_4_2.jpg/v1/crop/x_1641,y_78,w_4004,h_3880/fill/w_208,h_199,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/DSC_4127.jpg" alt="">
-                </div>
-                <div class="doctor_name">
-                    <strong>Dr. Suliman Shahin </strong>
-                    <p>Orthodontics and Dentofacial Orthopedics</p>
-                </div>
-            </div>
+<div class="doctor_card">
+    <div class="doctor_img">
+        <img src="https://static.wixstatic.com/media/26f862_4e5bc6542d27451a8bb33055b8fbc81e~mv2_d_2585_2002_s_2.png/v1/fill/w_1174,h_1174,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/26f862_4e5bc6542d27451a8bb33055b8fbc81e~mv2_d_2585_2002_s_2.png" alt="">
+    </div>
+    <div class="doctor_name">
+        <strong>د. عبد الكريم الحميدان</strong>
+        <p>جراحة اللثة و زراعة الأسنان</p>
+    </div>
+</div>
 
-            <div class="doctor_card">
-                <div class="doctor_img">
-                    <img src="https://static.wixstatic.com/media/26f862_ead5bca84f7d46038fbc54326f37fb89~mv2_d_6016_4016_s_4_2.jpg/v1/crop/x_1519,y_40,w_4077,h_3936/fill/w_204,h_197,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/DSC_4145.jpg" alt="">
+                <div class="doctor_card">
+                    <div class="doctor_img">
+                        <img src="https://static.wixstatic.com/media/26f862_3c7332004e9d4ae98f918c8122450178~mv2_d_2249_1926_s_2.jpg/v1/fill/w_1174,h_1174,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/26f862_3c7332004e9d4ae98f918c8122450178~mv2_d_2249_1926_s_2.jpg" alt="">
+                    </div>
+                    <div class="doctor_name">
+                        <strong>د. فارس الشهراني</strong>
+                        <p>تجميل و تركيب و زراعة أسنان</p>
+                    </div>
                 </div>
-                <div class="doctor_name">
-                    <strong>Dr. Suliman Shahin </strong>
-                    <p>Orthodontics and Dentofacial Orthopedics</p>
-                </div>
-            </div>
 
+                <div class="doctor_card">
+                    <div class="doctor_img">
+                        <img src="https://static.wixstatic.com/media/26f862_279e83c57c124920ba347b77ec6f94d5~mv2_d_2528_2002_s_2.jpg/v1/fill/w_1174,h_1174,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/26f862_279e83c57c124920ba347b77ec6f94d5~mv2_d_2528_2002_s_2.jpg" alt="">
+                    </div>
+                    <div class="doctor_name">
+                        <strong>د. سليمان شاهين</strong>
+                        <p>تقويم الأسنان و الوجه و الفكين</p>
+                    </div>
+                </div>
 
-            <div class="doctor_card">
-                <div class="doctor_img">
-                    <img src="https://static.wixstatic.com/media/26f862_6ae3b4a2f4f84f069b73f480cfb4744c~mv2_d_6016_4016_s_4_2.jpg/v1/crop/x_2088,y_301,w_3539,h_3521/fill/w_203,h_200,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/DSC_4123.jpg" alt="">
+                <div class="doctor_card">
+                    <div class="doctor_img">
+                        <img src="https://static.wixstatic.com/media/69898c_3e3edc71e8b84a09ae3eaa4c1cbcf579~mv2.jpg/v1/fill/w_1174,h_1174,al_b,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/69898c_3e3edc71e8b84a09ae3eaa4c1cbcf579~mv2.jpg" alt="">
+                    </div>
+                    <div class="doctor_name">
+                        <strong>د. جمانة السنان</strong>
+                        <p>علاج عصب و جذور الأسنان</p>
+                    </div>
                 </div>
-                <div class="doctor_name">
-                    <strong>Dr. Faris AlShahrani</strong>
-                    <p>Prosthodntics, Esthetic & Implant Dentistry</p>
-                </div>
-            </div>
 
-            <div class="doctor_card">
-                <div class="doctor_img">
-                    <img src="https://static.wixstatic.com/media/69898c_441932142f6f4c068cf7773ba1d57132~mv2.jpg/v1/crop/x_1347,y_0,w_4898,h_4800/fill/w_200,h_197,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_4699111.jpg" alt="">
+                <div class="doctor_card">
+                    <div class="doctor_img">
+                        <img src="https://static.wixstatic.com/media/26f862_058b27c0d0cb4191b0912a2e621e5099~mv2_d_2490_2002_s_2.jpg/v1/fill/w_1174,h_1174,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/26f862_058b27c0d0cb4191b0912a2e621e5099~mv2_d_2490_2002_s_2.jpg" alt="">
+                    </div>
+                    <div class="doctor_name">
+                        <strong>د. مازن القحطاني</strong>
+                        <p>طب أسنان أطفال و ذوي الإحتياجات خاصة</p>
+                    </div>
                 </div>
-                <div class="doctor_name">
-                    <strong>Dr. Abdulkareem Alhumaidan</strong>
-                    <p>Periodontics and Implant Dentistry</p>
-                </div>
-            </div>
 
+                <div class="doctor_card">
+                    <div class="doctor_img">
+                        <img src="https://static.wixstatic.com/media/26f862_2f727e5c2fee4d5b8d72d75dba0b868b~mv2_d_2458_1989_s_2.jpg/v1/fill/w_1174,h_1174,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/26f862_2f727e5c2fee4d5b8d72d75dba0b868b~mv2_d_2458_1989_s_2.jpg" alt="">
+                    </div>
+                    <div class="doctor_name">
+                        <strong>د. فراس القرعاوي</strong>
+                        <p>تجميل و تركيب و زراعة الأسنان</p>
+                    </div>
+                </div>
 
-            <div class="doctor_card">
-                <div class="doctor_img">
-                    <img src="https://static.wixstatic.com/media/26f862_8eb0e388dab043bb91324cbe4558c1a3~mv2_d_6016_4016_s_4_2.jpg/v1/crop/x_1724,y_57,w_3805,h_3752/fill/w_204,h_199,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/DSC_4117.jpg" alt="">
+                <div class="doctor_card">
+                    <div class="doctor_img">
+                        <img src="https://static.wixstatic.com/media/69898c_3267ce530cae4852b2b1a9f785554384~mv2.jpg/v1/fill/w_1174,h_1174,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/69898c_3267ce530cae4852b2b1a9f785554384~mv2.jpg" alt="">
+                    </div>
+                    <div class="doctor_name">
+                        <strong>د. فيصل الجوفي</strong>
+                        <p>جراحة اللثة و زراعة الأسنان</p>
+                    </div>
                 </div>
-                <div class="doctor_name">
-                    <strong>Dr. Firas Alqarawi</strong>
-                    <p>Prosthodntics, Esthetic & Implant Dentistry</p>
+
+                <div class="doctor_card">
+                    <div class="doctor_img">
+                        <img src="https://static.wixstatic.com/media/69898c_7a9894be36b24c66b3bc97da7a4a6a04~mv2.jpg/v1/fill/w_1174,h_1174,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/69898c_7a9894be36b24c66b3bc97da7a4a6a04~mv2.jpg" alt="">
+                    </div>
+                    <div class="doctor_name">
+                        <strong>د. ابراهيم العرفج</strong>
+                        <p>تقويم الأسنان و الوجه و الفكين</p>
+                    </div>
                 </div>
-            </div>
+
+                <div class="doctor_card">
+                    <div class="doctor_img">
+                        <img src="https://static.wixstatic.com/media/69898c_e9b46561456e48018ed82dfa89cac6ea~mv2_d_10027_6694_s_4_2.jpg/v1/fill/w_1174,h_1174,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/69898c_e9b46561456e48018ed82dfa89cac6ea~mv2_d_10027_6694_s_4_2.jpg" alt="">
+                    </div>
+                    <div class="doctor_name">
+                        <strong>د. منال السعدون</strong>
+                        <p>علاج عصب و جذور الأسنان</p>
+                    </div>
+                </div>
+
+                <div class="doctor_card">
+                    <div class="doctor_img">
+                        <img src="https://static.wixstatic.com/media/26f862_53f3db41eba84ea79612033a0ad12e79~mv2_d_6016_4016_s_4_2.jpg/v1/fill/w_1174,h_1174,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/26f862_53f3db41eba84ea79612033a0ad12e79~mv2_d_6016_4016_s_4_2.jpg" alt="">
+                    </div>
+                    <div class="doctor_name">
+                        <strong>د. حمد الرميح</strong>
+                        <p>تجميل و تركيب و زراعة أسنان</p>
+                    </div>
+                </div>
+
 
         </div>
 
     </section>
 
 
-    <section class="contact_us_section">
+    <section class="contact_us_section" id="contact">
         <div class="contact_header_main">
             <div class="contact_header_title">
                 <div class="contact_header">
