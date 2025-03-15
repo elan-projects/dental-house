@@ -84,70 +84,70 @@ const services = [
         description_en: "We provide expert orthodontic care for a perfect smile.",
         name_ar: "تقويم الأسنان", 
         description_ar: "نقدم رعاية تقويم أسنان متخصصة لابتسامة مثالية.",
-        image: "/public/imgs/Orthodontics.jpg"
+        image: "../imgs/Orthodontics.jpg"
     },
     { 
         name_en: "Oral and Maxillofacial Surgery", 
         description_en: "Advanced surgical care for oral and facial conditions.",
         name_ar: "جراحة الفم والوجه والفكين", 
         description_ar: "رعاية جراحية متقدمة لحالات الفم والوجه.",
-        image: "/public/imgs/Oral_and_Maxillofacial_Surgery.jpg"
+        image: "../imgs/Oral_and_Maxillofacial_Surgery.jpg"
     },
     { 
         name_en: "Pediatric and Special Needs Dentistry", 
         description_en: "Gentle and specialized dental care for children and individuals with special needs.",
         name_ar: "طب أسنان الأطفال وذوي الاحتياجات الخاصة", 
         description_ar: "رعاية أسنان متخصصة للأطفال وذوي الاحتياجات الخاصة.",
-        image: "/public/imgs/Pediatric_and_Special_Needs_Dentistry.jpg"
+        image: "../imgs/Pediatric_and_Special_Needs_Dentistry.jpg"
     },
     { 
         name_en: "Dental Implants", 
         description_en: "Permanent solutions for missing teeth with high-quality implants.",
         name_ar: "زراعة الأسنان", 
         description_ar: "حلول دائمة للأسنان المفقودة بزراعة عالية الجودة.",
-        image: "/public/imgs/Dental_Implants.jpg"
+        image: "../imgs/Dental_Implants.jpg"
     },
     { 
         name_en: "Prosthodontics", 
         description_en: "Custom dental prosthetics to restore function and aesthetics.",
         name_ar: "تعويضات الأسنان", 
         description_ar: "أطقم أسنان مخصصة لاستعادة الوظيفة والمظهر.",
-        image: "/public/imgs/Prosthodontics.jpg"
+        image: "../imgs/Prosthodontics.jpg"
     },
     { 
         name_en: "Endodontics", 
         description_en: "Expert root canal treatments to save natural teeth.",
         name_ar: "علاج جذور الأسنان", 
         description_ar: "علاجات قناة الجذر المتخصصة للحفاظ على الأسنان الطبيعية.",
-        image: "/public/imgs/Endodontics.jpg"
+        image: "../imgs/Endodontics.jpg"
     },
     { 
         name_en: "Restorative Dentistry", 
         description_en: "Comprehensive solutions to restore and strengthen teeth.",
         name_ar: "طب الأسنان الترميمي", 
         description_ar: "حلول شاملة لاستعادة وتقوية الأسنان.",
-        image: "/public/imgs/Restorative_Dentistry.jpg"
+        image: "../imgs/Restorative_Dentistry.jpg"
     },
     { 
         name_en: "Teeth Whitening", 
         description_en: "Professional whitening treatments for a brighter smile.",
         name_ar: "تبييض الأسنان", 
         description_ar: "علاجات تبييض احترافية لابتسامة أكثر إشراقًا.",
-        image: "/public/imgs/Teeth_Whitening.jpg"
+        image: "../imgs/Teeth_Whitening.jpg"
     },
     { 
         name_en: "Periodontics", 
         description_en: "Specialized care for gum health and disease prevention.",
         name_ar: "أمراض اللثة", 
         description_ar: "رعاية متخصصة لصحة اللثة والوقاية من الأمراض.",
-        image: "/public/imgs/Periodontics.jpg"
+        image: "../imgs/Periodontics.jpg"
     },
     { 
         name_en: "Oral Health and Hygiene", 
         description_en: "Preventive care and education for a healthy mouth.",
         name_ar: "صحة الفم والنظافة", 
         description_ar: "رعاية وقائية وتثقيف لفم صحي.",
-        image: "/public/imgs/Oral_Health_and_Hygiene.jpg"
+        image: "../imgs/Oral_Health_and_Hygiene.jpg"
     }
 ];
 
